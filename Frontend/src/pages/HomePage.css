@@ -1,0 +1,87 @@
+.homepage-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .homepage-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .search-bar-container {
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  .search-bar {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .cars-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .car-card {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .car-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .car-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .car-info {
+    padding: 15px;
+  }
+  
+  .car-info h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 0 10px;
+  }
+  
+  .car-info p {
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  .no-cars-message {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+  }
+  

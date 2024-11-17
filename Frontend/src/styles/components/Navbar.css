@@ -1,0 +1,39 @@
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #343a40;
+    padding: 15px 20px;
+    color: #fff;
+  }
+  
+  .navbar a {
+    color: #fff;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    color: #007bff;
+  }
+  
+  .navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navbar .links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar button {
+    background-color: #ff4757;
+  }
+  
+  .navbar button:hover {
+    background-color: #e63946;
+  }
+  

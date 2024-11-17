@@ -1,0 +1,29 @@
+.profile-container {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+  }
+  
+  .car-list {
+    margin-top: 20px;
+  }
+  
+  .car-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .car-info h3 {
+    margin: 0;
+  }
+  
+  .car-image {
+    max-width: 100px;
+    border-radius: 5px;
+  }
+  

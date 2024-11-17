@@ -1,0 +1,152 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    scroll-behavior: smooth;
+  }
+  
+  /* General Typography */
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: 600;
+  }
+  
+  p {
+    margin: 0;
+    line-height: 1.6;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #007bff;
+  }
+  
+  /* Buttons */
+  button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Input Fields */
+  input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  input:focus, textarea:focus, select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Containers */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .flex {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .grid {
+    display: grid;
+    gap: 20px;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #343a40;
+    padding: 15px 20px;
+    color: #fff;
+  }
+  
+  .navbar a {
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .navbar a:hover {
+    color: #007bff;
+  }
+  
+  /* Card Component */
+  .card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #343a40;
+    color: #fff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .container {
+      padding: 10px;
+    }
+  
+    .flex {
+      flex-direction: column;
+    }
+  }
+  
+  /* Include in index.css or global.css */
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";

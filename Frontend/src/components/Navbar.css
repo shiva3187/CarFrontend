@@ -1,0 +1,95 @@
+/* Navbar styling */
+nav {
+    width: 100%; /* Full-width navbar */
+    padding: 10px 20px;
+    background-color: #ff6700; /* Bright orange */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky; /* Sticks to the top */
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+nav h1, nav h3 {
+    margin: 0;
+    color: white;
+}
+
+nav h1 {
+    font-size: 2rem;
+}
+
+nav h3 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin-left: 20px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+/* Adjusting space between buttons */
+nav .flex button {
+    margin-left: 15px; /* Increased margin for spacing */
+    padding: 8px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Logout button specific margins */
+nav .flex button.bg-red-500 {
+    margin-left: 20px; /* Additional margin for spacing */
+    margin-right: 20px; /* Right margin to pull it away from the edge */
+    background-color: #dc3545; /* Red for logout button */
+    color: white;
+}
+
+nav .flex button.bg-red-500:hover {
+    background-color: #c82333; /* Slightly darker red for hover */
+}
+
+nav .flex button:hover {
+    background-color: #ff4500; /* Slightly darker orange for hover */
+}
+
+nav .flex button.bg-green-500 {
+    background-color: #28a745; /* Green for signup button */
+    color: white;
+}
+
+nav .flex button.bg-white {
+    background-color: white;
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+
+nav .flex button.bg-white:hover {
+    background-color: #f1f1f1;
+    color: #0056b3;
+}
+
+/* User info styling */
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Even spacing between user info items */
+}
+
+.user-info span {
+    font-size: 1rem;
+    color: white;
+}

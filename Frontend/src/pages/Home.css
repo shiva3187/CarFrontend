@@ -1,0 +1,136 @@
+/* General Container Styling */
+.home-page-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.home-page-container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Grid Layout for Cars */
+.cars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Styling for Each Car Card */
+.car-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 15px;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.car-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Carousel Styling */
+.slick-slider {
+  margin-bottom: 10px;
+}
+
+.slick-slide img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Styling for Image Slider and Arrows */
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: opacity 0.3s ease;
+}
+
+.car-card:hover .slider-container {
+  opacity: 1; /* Make slider visible on hover */
+}
+
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  z-index: 1;
+  transition: background 0.3s ease;
+}
+
+.slider-arrow:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
+
+/* Car Info Section */
+.car-info {
+  text-align: center;
+}
+
+.car-info h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.car-info p {
+  font-size: 1rem;
+  color: #666;
+  margin: 5px 0;
+}
+
+/* View Details Link */
+.view-details-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.view-details-link:hover {
+  color: #0056b3;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .cars-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .cars-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .car-card {
+    margin: 0 auto;
+  }
+}

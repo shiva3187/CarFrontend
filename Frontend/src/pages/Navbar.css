@@ -1,0 +1,101 @@
+/* Navbar container */
+.navbar {
+    background-color: #2c3e50; /* Dark blue-gray background */
+    color: white;
+    padding: 20px 0; /* Increase padding for a bigger navbar */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+  }
+  
+  /* Navbar container layout */
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Navbar logo */
+  .navbar-logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+    flex: 0 1 auto; /* Ensure the logo stays on the left */
+  }
+  
+  /* Navbar middle links container (Home and Add Car) */
+  .navbar-middle {
+    display: flex;
+    justify-content: center;
+    flex: 1; /* Ensures it takes up all available space in the center */
+  }
+  
+  /* Navbar links */
+  .navbar-links {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navbar link style */
+  .navbar-link {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px; /* Increased margin for spacing */
+    font-size: 1.2rem; /* Increased font size */
+    font-weight: 500; /* Slightly bolder text */
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  /* Hover effect on links */
+  .navbar-link:hover {
+    color: #007bff; /* Blue hover color */
+    transform: scale(1.1); /* Slightly enlarge the link when hovered */
+  }
+  
+  /* Navbar login container */
+  .navbar-login {
+    flex: 0 1 auto; /* Ensure login button stays on the right */
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .navbar-links {
+      display: none; /* Hide links on small screens */
+    }
+  
+    .navbar-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar-links.active {
+      display: block; /* Show links when toggled */
+    }
+  
+    .navbar-logo {
+      font-size: 1.8rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar-logo {
+      font-size: 1.5rem; /* Reduce logo size for smaller screens */
+    }
+  
+    .navbar-link {
+      font-size: 1rem; /* Adjust link font size */
+    }
+  
+    .navbar-link {
+      margin-left: 15px; /* Adjust margin for small screens */
+    }
+  }
+  
